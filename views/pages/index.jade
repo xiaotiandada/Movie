@@ -1,0 +1,13 @@
+extends ../layout
+
+block content
+    .container-fluid
+      .row-fluid
+        for item in movies
+          .col-xs-12.col-sm-4.col-md-2       
+            .thumbmail
+              a(href="/movie/#{item._id}")
+                img(alt='140x140', src='#{item.poster}',srcset="")
+              .caption
+                h3 #{item.title}
+                button.btn.btn-primary.btn-user(href="/movie/#{item._id}",type='button') 观看影片
