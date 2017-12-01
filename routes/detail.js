@@ -2,7 +2,7 @@ var express = require('express');
 var router = express.Router();
 
 /* Detail page. */
-router.get('/movie/1', function(req, res, next) {
+router.get('/movie/:id', function(req, res, next) {
   res.render('detail', {
      title: '详情页面',
      movie:{
