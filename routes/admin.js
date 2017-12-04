@@ -2,7 +2,7 @@ var express = require('express');
 var router = express.Router();
 
 /* Admin page. */
-router.get('/', function(req, res, next) {
+router.get('/admin/movie', function(req, res, next) {
   res.render('admin', {
      title: '后台页面',
      movie:{
