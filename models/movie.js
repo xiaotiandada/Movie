@@ -1,14 +1,19 @@
-var mongoose = require('mongoose')
-var MovieSchema = require('../schemas/movie')
-<<<<<<< HEAD
+// var mongoose = require('mongoose')
+// var MovieSchema = require('../schemas/movie')
 
 
-// 编译生成movie模型  
-var Movie = mongoose.model('Movie',MovieSchema)
+// // 编译生成movie模型  
+// var Movie = mongoose.model('Movie',MovieSchema)
 
-// 将movie模型导出  
-=======
-var Movie = mongoose.model('Movie',MovieSchema)
+// // 将movie模型导出  
+// module.exports = Movie
 
->>>>>>> 3982a7af592bcf5da82f44498cfd06682eded788
-module.exports = Movie
+
+var mongoose = require('mongoose');
+var movieSchema = require('../schemas/movie.js'); //引入'../schemas/movie.js'导出的模式模块
+
+// 编译生成movie模型
+var movie = mongoose.model('movie', movieSchema);
+
+// 将movie模型[构造函数]导出
+module.exports = movie;

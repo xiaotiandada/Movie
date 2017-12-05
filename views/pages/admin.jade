@@ -3,13 +3,8 @@ extends ../layout
 block content
     .container-fluid
         .row-fluid
-<<<<<<< HEAD
             form.form-horizontal(method="post", action="/admin/movie/new")
                 input(type="hidden", name="movie[_id]", value="#{movie._id}")  
-=======
-            form.form-horizontal(method="post",action="/admin/movie")
-                input(type="hidden",name="movie[_id]",value="#{movie._id}")
->>>>>>> 3982a7af592bcf5da82f44498cfd06682eded788
                 .form-group
                     label.col-sm-2.control-label(for="inputTitle") 电影名字
                     .col-sm-10
