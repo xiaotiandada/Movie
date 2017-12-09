@@ -6,15 +6,19 @@
     "xiaotian <952822399@qq.com>"
   ],
   "license": "MIT",
-  "homepage": "",
+  "homepage": "https://github.com/xiaotiandada/Movie",
   "ignore": [
     "**/.*",
     "node_modules",
     "bower_components",
     "test",
-    "tests"
+    "tests",
+    "public/libs"
   ],
   "dependencies": {
     "bootstrap": "^3.3.7"
-  }
+  },
+  "keywords": [
+    "movie"
+  ]
 }
